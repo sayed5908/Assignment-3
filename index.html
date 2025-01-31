@@ -26,8 +26,10 @@
 </head>
 <body>
     <header class=" md:container mx-auto">
-        <div class="navbar bg-base-100 font-sora">
-            <div class="navbar-start">
+        <div class="navbar bg-base-100 font-sora border-b-2 md:border-b-0">
+          
+          <!-- dropdown-------------------- -->
+            <div class="navbar"> 
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg
@@ -46,23 +48,17 @@
                 <ul
                   tabindex="0"
                   class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
+                  <li><a>Fina a pet</a></li>
+                  <li><a>Breeds</a></li>
+                  <li><a>Contact us</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost text-xl"><div class="flex gap-2">
+              <a class="btn btn-ghost text-xl px-0"><div class="flex gap-2">
                 <!-- image section -->
                 <div>
-                    <img src="assets/logo-header.png" alt="">
+                    <img class="" src="assets/logo-header.png" alt="">
                 </div>
-                <div class="font-sora"><h2 class="pt-3">Browse<span class="text-yellow-400">4</span>Pets</h2></div>
+                <div class="font-sora hidden md:block"><h2 class="pt-3">Browse<span class="text-yellow-400">4</span>Pets</h2></div>
               </div></a>
             </div>
             <div class="navbar-center hidden lg:flex">
@@ -74,12 +70,27 @@
             </div>
             <div class="navbar-end gap-2">
                 
-              <a class="border border-yellow-200 px-4 py-1 rounded-lg">Login</a>
-              <a class="bg-yellow-300 px-4 py-1 rounded-lg">Register</a>
+              <a class="border border-yellow-200 px-4 py-1 rounded-lg hidden md:block">Login</a>
+              <a class="bg-yellow-300 px-4 py-1 rounded-lg hidden md:block">Register</a>
             </div>
           </div>
     </header>
+
+    <!-- main section -->
     <main>
+
+      <!-- banner section -->
+       
+      <section class="container px-5 mx-auto mt-5 md:mt-20 md:flex relative">
+        <div class="z-10">
+          <h2 class="font-adlam-display text-3xl md:text-6xl">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h2>
+          <p class="text-gray-500 py-5">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+          <button class="bg-yellow-300 px-4 py-1 rounded-lg">Find a pet</button>
+        </div>
+        <div class="absolute md:right-0 md:-top-20 md:h-full">
+          <img class="" src="assets/cat-big.png" alt="">
+        </div>
+      </section>
 
     </main>
     <footer>
